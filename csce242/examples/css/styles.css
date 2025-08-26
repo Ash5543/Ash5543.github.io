@@ -1,0 +1,45 @@
+/* Structure */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("images/download.jfif") no-repeat;
+    background-size: cover;
+}
+/*padding would be space inside div
+margin would be space between divs*/
+#content{
+    background: steelblue;
+    width:70%;
+    margin:auto; /*center*/
+    padding: 1%; /*get text away from edge*/
+    border-radius: 15px; /*round corners*/
+}
+
+/* Table */
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border:1px solid black;
+    padding: 5px 10px; /*Top and bottom 5px, left and right 10px*/
+    background: whitesmoke;
+}
+
+th{
+    background:beige;
+}
+
+/* Images */
+#giraffe{
+    box-shadow: 10px 10px lightblue;
+    margin: 10px;
+}
+
+/* Typography */
+h1{
+    color:darkslategray;
+}
+
+h2{
+    color:beige;
+}
