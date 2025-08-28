@@ -1,0 +1,25 @@
+/* Structure */
+#content{
+    background:#EFF9F0;
+    width:70%;
+    margin:auto;
+    padding: 1%;
+}
+body{
+    background:#5A7D7C;
+}
+
+/* Text */
+h1, h2{
+    color:#896A67;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color:rgb(49, 167, 88);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color:#232C33;
+}
