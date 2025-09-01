@@ -1,12 +1,15 @@
 /* Structure */
 #content{
     background:#EFF9F0;
-    width:70%;
+    width:90%;
     margin:auto;
     padding: 1%;
 }
 body{
     background:#5A7D7C;
+}
+.assignment{
+    background:rgb(180, 179, 179);
 }
 
 /* Text */
@@ -14,12 +17,43 @@ h1, h2{
     color:#896A67;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+h3{
+    text-align: center;
+}
 a{
-    color:rgb(49, 167, 88);
+    color:rgb(45, 104, 64);
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
 }
 p{
     font-family: 'Courier New', Courier, monospace;
     color:#232C33;
+}
+
+/* Images */
+.screenshot{
+    display:block;
+    height:80%;
+    width:90%;
+    margin:auto;
+}
+
+/* Larger Devices */
+@media only screen and (min-width:768px){
+    .columns{
+        display:flex;
+    }
+    #content{
+        width:70%;
+    }
+    .assignment{
+        flex:1;
+        margin:10px;
+        padding-bottom: 5%;
+    }
+    .description{
+        margin:0;
+        padding-left: 4%;
+    }
+
 }
