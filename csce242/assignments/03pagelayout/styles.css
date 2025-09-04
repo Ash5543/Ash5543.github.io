@@ -1,0 +1,150 @@
+body{
+    background:#2C5944;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    width:95%;
+    margin:auto;
+    background-color: rgb(255,255,255,0.7);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#main-header{
+    background:gray;
+    border-radius: 5px;
+    padding:5px;
+    color:white;
+}
+
+.part1sec{
+    background:lightblue;
+    padding: 10px;
+}
+
+.part2sec{
+    background:darkcyan;
+}
+
+.part2secright{
+    background:darkred;
+}
+footer{
+    background:crimson;
+    height: 200px;
+}
+/*main navigation*/
+#main-nav ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+#main-nav li{
+    border-bottom:1px solid white;
+}
+#main-nav li:first-child{
+    border-top: 1px solid white;
+}
+#main-nav a{ /*a tags in main nav*/
+    color:white;
+    padding:10px 5px;
+    text-decoration: none; /*remove underlines*/
+    display: block;
+}
+#main-nav a:hover{
+    background: white;
+    color:black;
+}
+.one{
+    flex:1;
+}
+.two{
+    margin: 5px;
+}
+/*typography*/
+h1{
+    text-align: center;
+}
+
+.centerimage{
+    display:block;
+    margin:auto;
+}
+.centertext{
+    text-align: center;
+}
+.smallscreencolumns{
+    display:flex;
+}
+/*larger devices, always goes last*/
+@media only screen and (min-width:768px){
+    body{
+        background: darkolivegreen;
+        background-size:cover;
+    }
+
+    #content{
+        width:100%;
+    }
+
+    /*columns*/
+    .columns{
+        display:flex;
+    }
+    .columnswrap{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .part1sec{
+        width: 700px;
+        padding: 10px;
+        margin: 10px;
+    }
+    /*main nav*/
+    #main-nav li{
+        flex:1;
+    }
+    #main-nav li, #main-nav li:first-child{
+        border:none;
+    }
+    #main-nav a{
+        padding:5px;
+        text-align: center;
+    }
+    #main-nav a:hover{
+        background:#2C5944;
+        color:white;
+        border-bottom: 1px solid white;
+    }
+
+    #part2left{
+        flex:1;
+    }
+    #part2right{
+        flex:1;
+    }
+    .one{
+        flex:1;
+    }
+
+    .part2sec{
+        background:darkcyan;
+        flex: 0 1 400px;
+        margin:5px;
+
+    }
+
+    .part2secright{
+        background:darkred;
+        flex: 0 1 400px;
+        margin:5px;
+    }
+
+    aside{
+        background:beige;
+        float:left;
+        height: 600px;
+        width:300px;
+    }
+
+}
