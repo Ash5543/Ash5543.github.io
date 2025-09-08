@@ -1,0 +1,377 @@
+:root{
+    --black:#000000;
+    --garnet:#75000A;
+    --white:#FFFFFF;
+    --blue:#1f404d;
+}
+#header{
+    position: relative;
+}
+#top-header{
+    background: var(--black);
+    color: var(--white);
+    padding: 30px;
+}
+
+#main-nav{
+    background: var(--garnet);
+}
+
+#main-nav a{
+    color: var(--white);
+}
+#login-nav{
+    position:absolute;
+    top:2.5%;
+    left:2.5%;
+}
+#login-nav a{
+    display:block;
+    padding:15px;
+    color: var(--white);
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;/*remove underlines*/
+}
+
+#showcase img{
+    width:100%;
+    display:block;
+}
+#showcasetwo img{
+    width:100%;
+    display:block;
+}
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+#program h1, p{
+    color:var(--garnet);
+    text-align: center;
+}
+#program h1{
+    padding-top: 5%;
+}
+#program p{
+    font-size: 150%;
+    padding-left:5%;
+    padding-right:5%;
+    color:var(--black);
+}
+.button{
+    margin: 4%;
+}
+#buttons a{
+    background:var(--garnet);
+    color:var(--white);
+    text-decoration: none;
+    padding:15%;
+    border: 1px solid var(--white);
+}
+#buttons a:hover{
+    background:var(--white);
+    color:var(--garnet);
+    border:1px solid var(--garnet);
+}
+.hide-small {
+    display:none;
+}
+
+#showcase{
+    position:relative;/*makes it so p can be moved absolutely inside of the div*/
+}
+#showcase h1{
+    background:rgba(255, 255, 255, 0.7);
+    padding:5px;
+    width:600px;
+    height:100px;
+    text-align: center;
+    padding-top:2.5%;
+
+    position:absolute;
+    bottom:20%;
+    left:0%;
+
+}
+#showcasetwo{
+    position:relative;
+}
+#impacting{
+    background:var(--black);
+    position:absolute;
+    bottom:20%;
+    right:5%;
+    padding-bottom: 2%;
+}
+#impacting h1,h3,a{
+    color:var(--white);
+    font-size: 150%;
+    margin:2%;
+}
+#impacting a{
+    text-decoration: none;
+    background:var(--garnet);
+    border:1px solid var(--white);
+    padding:1%;
+}
+#impacting a:hover{
+    background:var(--white);
+    color:var(--garnet);
+    border:1px solid var(--garnet);
+}
+#futurediv{
+    background:var(--garnet);
+}
+#futurediv p{
+    color:var(--white);
+    text-align: left;
+    padding-left:9%;
+    font-size: 150%;
+}
+#futurediv h1{
+    padding-top:5%;
+    color:var(--white);
+    text-align: left;
+    padding-left:9%;
+}
+#blackbutton{
+    padding-left:9%;
+    width:fit-content;
+    padding-top:2%;
+}
+#blackbutton a{
+    text-decoration: none;
+    color:var(--white);
+    background:var(--black);
+    padding:4%;
+    border: 1px solid var(--white);
+}
+#blackbutton a:hover{
+    background:var(--white);
+    color:var(--garnet);
+}
+#circle{
+    background:Var(--garnet);
+    position:relative;
+    height:300px;
+}
+#circle img{
+    position:absolute;
+    top:15%;
+    left:10%;
+    display:block;
+    width:300px;
+    height:300px;
+    border-radius: 200px;
+}
+#circle h1{
+    text-align: right;
+    padding-left: 6%;
+    padding-top: 4%;
+}
+#networkdiv{
+    background:var(--blue);
+}
+#networkdiv h1, #networkdiv p{
+    color:var(--white);
+    font-size: 150%;
+    padding-left: 5%;
+}
+#networkdiv h1{
+    padding-top: 3%;
+}
+#networkbutton a{
+    text-decoration: none;
+    background:var(--garnet);
+    color:white;
+    padding:1%;
+    border:1px solid var(--white);
+
+}
+#networkbutton a:hover{
+    background:var(--white);
+    color:var(--garnet);
+    border:1px solid var(--garnet);
+}
+#news h1{
+    text-align: center;
+    padding-top: 2%;
+}
+#news h1, #news p{
+    font-size: 150%;
+    color:var(--garnet);
+}
+.one{
+    margin:5%;
+}
+.one h1{
+    padding-top:0;
+}
+.one a{
+    background:var(--garnet);
+    color:var(--white);
+    border:1px solid(--white);
+    padding:2%;
+    text-decoration: none;
+}
+.one a:hover{
+    background:var(--white);
+    color:var(--garnet);
+    border:1px solid (--white);
+}
+
+#empoweringdiv{
+    background:var(--black);
+}
+#empoweringdiv h1, #empoweringdiv p{
+    font-size: 150%;
+    color:white;
+    padding:1%;
+}
+#empoweringbutton a{
+    text-decoration: none;
+    padding:2%;
+    background:var(--garnet);
+    color:var(--white);
+    border:1px solid var(--white);
+}
+#empoweringbutton a:hover{
+    background:var(--white);
+    color:var(--garnet);
+    border:1px solid var(--garnet);
+}
+#footerone a{
+    background:var(--black);
+    color:var(--white);
+    text-decoration: none;
+    border:1px solid var(--white);
+    margin-top:2%;
+}
+
+#footertwo{
+    background: var(--garnet);
+}
+#footertwo h1{
+    color:var(--white);
+    padding:5%;
+}
+#footer{
+    background:var(--black);
+}
+#footer p{
+    color:var(--white);
+    padding:1%;
+}
+/*Larger Screens*/
+@media only screen and (min-width: 768px){
+    .columns{
+        display:flex;
+    }
+
+    #main-nav li{
+        padding:20px;
+    }
+    #main-nav ul:last-child{
+        padding-right:100px;
+    }
+    #main-nav ul{
+        justify-content: flex-end;
+    }
+
+    #title{
+        padding-top: 20px;
+        text-align: right;
+    }
+    #header-img{
+        position:absolute;
+        top:50px;
+        left:80px;
+    }
+
+    #centertext{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding:2% 30%;
+    }
+
+    #futurediv{
+        flex:1;
+        justify-content: center;
+    }
+
+    #futurediv img{
+        height:5%;
+        width:100%;
+    }
+
+    #buttons{
+        flex:1;
+        justify-content: center;
+    }
+    #buttons a{
+        padding-right: 10%;
+    }
+    #circle{
+        flex:1;
+        justify-content: center;
+        height:400px;
+    }
+    #circle p{
+        padding-left: 5%;
+    }
+    #circle img{
+        display:block;
+        width:300px;
+        height:300px;
+        border-radius: 200px;
+    }
+
+    #login-nav a{
+        display:inline;
+    }
+
+    #login-nav li:not(:last-child):after{
+        content:"|";
+        color:var(--white);
+    }
+
+    #newscolumns{
+        flex:1;
+        justify-content: center;
+
+    }
+    .one{
+        box-sizing: border-box;
+    }
+    #newscolumns img {
+        width: 100%;     /* image fits column */
+        height: auto;
+        display: block;
+    }
+
+    #footerone{
+        padding:2%;
+    }
+    .sixty{
+        flex:6;
+    }
+    .twenty{
+        flex:2;
+    }
+    #footerone section{
+        margin:20px;
+    }
+
+    #footer p:after{
+        content:"|";
+        color:var(--white);
+    }
+
+}
