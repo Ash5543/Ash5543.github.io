@@ -238,6 +238,19 @@ footer p {
     height:500px;
 }
 
+.clicked{
+    background:magenta;
+    color:white;
+}
+
+.happyclicked{
+    background:rgb(221, 221, 84);
+    color:black;
+}
+.sadclicked{
+    background:slategray;
+    color:black;
+}
 
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
