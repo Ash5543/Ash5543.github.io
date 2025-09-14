@@ -1,0 +1,34 @@
+/*Colors*/
+.column{
+    background:#EBEBEB;
+    border:3px solid #090446;
+}
+body{
+    background:#7286A0;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+img{
+    height:200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+/*Larger Screens*/
+@media only screen and (min-width: 768px){
+    .columns{
+        display:flex;
+    }
+    #content{
+        flex:1;
+        justify-content: center;
+    }
+    .column{
+        padding: 20px;
+        margin:20px;
+    }
+}
