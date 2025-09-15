@@ -1,0 +1,172 @@
+/*Colors*/
+header{
+    background:#7BA098;
+}
+#options section{
+    background:beige;
+}
+.menu section{
+    background: beige;
+}
+#order section{
+    background:beige;
+}
+/*Structure*/
+body,h1{
+    margin:0;
+}
+h1{
+    padding-left: 35px;
+}
+
+/*Nav*/
+nav li{
+    list-style-type: none;
+    padding-bottom:20px;
+}
+nav a{
+    text-decoration: none;
+}
+header h1{
+    padding-top:10px;
+}
+
+
+/*Home screen*/
+#intro img{
+    width:fit-content;
+}
+#options{
+    text-align: center;
+    flex-wrap: wrap;
+}
+#options section{
+    margin-right:20px;
+    margin-top:20px;
+}
+
+/*Menu*/
+.menu{
+    padding-bottom: 20px;
+}
+.menu section{
+    margin-right:20px;
+    margin-top:20px;
+    text-align: center;
+}
+
+.columns-mobile{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Order*/
+#order{
+    padding-left: 20px;
+}
+#order section{
+    width:fit-content;
+    padding-left: 0px;     /* or whatever spacing you want */
+    margin: 20px;      /* adds spacing around sections */
+}
+
+/*Larger Screens*/
+@media only screen and (min-width: 768px){
+    .columns{
+        display:flex;
+    }
+    /*nav*/
+    nav li{
+        padding-right:5px;
+    }
+
+    /*Home screen*/
+    #intro img{
+        padding-left:35px;
+    }
+    #intro-p{
+        padding-left: 40px;
+        font-size: larger;
+    }
+    #options{
+        padding-left: 35px;
+        padding-top:20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    /*Menu*/
+    .menu{
+        padding-left:35px;
+    }
+    /*About*/
+    .about:first-child{
+        padding-left: 35px;
+    }
+    .about p, .about h1{
+        padding-left: 35px;
+        padding-top:20px;
+    }
+    .about:last-child{
+        padding-right:25px;
+    }
+
+    /*Order*/
+    #order section{
+        margin:auto;
+        margin-bottom: 20px;
+    }
+    .sandwich-p{
+        padding-left:20px;
+    }
+    .number{
+        padding-top:70px;
+        padding-left:200px;
+        padding-right:30px;
+    }
+
+    /*Locations*/
+    #location img{
+        padding-left: 35px;
+    }
+    #location-info{
+        padding-top:40px;
+    }
+    #location-info p{
+        padding-left:35px;
+    }
+    #data{
+        padding-left: 35px;
+    }
+}
+
+/*smaller screens*/
+@media only screen and (max-width: 500px){
+    /*Home screen*/
+    #options{
+        padding-left:20px;
+    }
+    #intro img{
+        width:100%;
+    }
+    /*Menu*/
+    .menu{
+        padding-left: 20px;
+    }
+    /*Order*/ 
+    .sandwich{
+        text-align: center;
+    } 
+    .number{
+        padding-top:10px;
+        padding-bottom: 10px;
+    } 
+    /*Locations*/
+    #location-info p, #data{
+        padding-left:35px;
+    }
+
+    img{
+        max-width: 100%;
+    }
+}   
