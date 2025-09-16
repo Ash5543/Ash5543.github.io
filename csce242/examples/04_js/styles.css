@@ -102,30 +102,34 @@ main {
 }
 
 /* Animations */
-#animation-fun {
-    background:#a0ccd8;
-    padding:20px;
-    height:300px;
+#ball{
+    margin-top:10px;
+    background:slategray;
+    height:50px;
+    width:50px;
+    border-radius: 50px;
     position:relative;
 }
 
-#ball-area {
-    position:relative;
+.bounce{
+   animation-name: ball-bounce;
+   animation-duration: 2s;
+   animation-iteration-count: 5; 
 }
 
-#ball, #circle {
-    height: 30px;
-    width:30px;
-    background:var(--circle-color);
-    border-radius:50px;
-    position:relative;
-    left:35%;
+@keyframes color-change{
+    0% {background:slategray};
+    20% {background:beige};
+    40% {background:pink};
+    60% {background: #00af23};
+    80% {background:yellow};
+    100% {background:darkblue};
 }
 
-#ball {
-    animation-name: fun;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+@keyframes ball-bounce{
+    0% {top:0;}
+    50%{top:200px;}
+    100%{top:0px;}
 }
 
 /* Donations */
@@ -251,7 +255,12 @@ footer p {
     background:slategray;
     color:black;
 }
-
+.error{
+    color:red;
+}
+input{
+    max-width: 100%;
+}
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
     .columns {
