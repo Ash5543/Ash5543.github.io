@@ -142,7 +142,7 @@ main {
     height:200px;
     margin-right:10%;
     border:2px solid var(--primary-color);
-    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
+    background:linear-gradient(0deg/*going up and down*/, red 0% var(--donation-percent)/*from zero percent to donation percent if you make end of one color and start of another the same no gradient*/, white var(--donation-percent) 100%);
 }
 
 .error {

@@ -80,6 +80,70 @@ document.getElementById("btn-bounce").onclick = (event) =>{
 
     ball.classList.toggle("bounce");
 
+};
+
+//Counter
+let counter = 0;
+let counterInterval;
+const countP = document.getElementById("p-count");
+document.getElementById("btn-count-stop").disabled=true;
+document.getElementById("reset").disabled=true;
+
+document.getElementById("btn-count-start").onclick = () =>{
+    counterInterval=setInterval(()=>{
+        counter++;
+        countP.innerHTML=counter;
+    }, 1000);
+    document.getElementById("btn-count-start").disabled=true;
+    document.getElementById("btn-count-stop").disabled=false;
+    document.getElementById("reset").disabled=false;
+};
+document.getElementById("btn-count-stop").onclick = () =>{
+    clearInterval(counterInterval);
+    document.getElementById("btn-count-start").disabled=false;
+};
+document.getElementById("reset").onclick = () =>{
+    clearInterval(counterInterval);
+    counter=0;
+    countP.innerHTML=counter;
+    document.getElementById("btn-count-start").disabled=false;
+    document.getElementById("btn-count-stop").disabled=true;
+    document.getElementById("reset").disabled=true;
+};
+
+
+
+//Thermometer
+const goal = 10000;
+document.getElementById("goal-span").innerHTML=goal;
+
+document.getElementById("btn-donations").onclick = () =>{
+    const donation = document.getElementById("txt-donations").value;
+    const errorSpan = document.getElementById("error-donation");
+    errorSpan.innerHTML="";
+    if(isNaN(donation) || donation <=0){
+        errorSpan.innerHTML="*Invalid amount";
+        return;
+    }
+
+    const donationPercent=donation/goal * 100;
+    const message = document.getElementById("message");
+    message.innerHTML="";
+    if(donationPercent>=100){
+        message.innerHTML="goal reached";
+    }
+    else if(donationPercent>=50){
+        message.innerHTML="over halfway there";
+    }
+    else{
+        message.innerHTML="lets get going";
+    }
+
+    document.querySelector(":root").style.setProperty("--donation-percent", donationPercent+"%");/*setProperty(property, what you set it to(has to be exact format as property))*/
+    
 }
+
+
+
 
 
