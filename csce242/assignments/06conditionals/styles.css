@@ -1,0 +1,80 @@
+/*Colors*/
+:root{
+    --blue:#6E75A8;
+    --white:#fefefe;
+}
+body{
+    background: var(--blue);
+}
+#exercises{
+    background: var(--white);
+}
+
+/*Structure*/
+h1, h3, p{
+    text-align: center;
+}
+label{
+    display:block;
+    text-align: center;
+}
+img, input, label{
+    display:block;
+    margin:auto;
+}
+section{
+    padding:3%;
+    outline: 3px solid black;
+}
+
+/*Nav*/
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+/*Images*/
+#plant{
+    height:300px;
+    width:300px;
+}
+
+.hidden {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
+@media only screen and (min-width: 1200px){
+    #toggle-nav {
+        display:none;
+    }
+    .columns{
+        display: flex;
+    }
+
+    /*Nav*/
+    #nav-items{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-left:1%;
+    }
+    nav a{
+        color:var(--white);
+        white-space: nowrap;
+    }
+    nav li{
+        padding-right:1%;
+    }
+    nav li:not(:last-child):after{
+        content:"|";
+        color:var(--white);
+        margin:10%;
+    }
+}

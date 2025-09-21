@@ -7,7 +7,33 @@
     <body>
         
         <div id="content">
+            <h1>Assignment 6</h1>
+            <h3>If statements</h3>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <h2 id="arrow-up" class="hidden">&#129033;</h2>
+                    <h2 id="arrow-down" class="">&#129035;</h2>
+                </div>
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="#" id="one">Exercise 1</a></li>
+                    <li><a href="#" id="two">Exercise 2</a></li>
+                </ul>
+            </nav>
+            <div id="exercises">
+                <section id="planting" class="">
+                    <label for="days">How many days has it been since watering your plant?</label><br>
+                    <input type="range" id="days" min="1" max="12"><br>
+                    <img id="plant" src="images/img1.webp">
+                    <p id="day-p"></p>
+                    <p id="message"></p>
+                </section>
+                <section id="clock" class="hidden">
+                    <h3>Our digital clock</h3>
+                    <p id="time"></p>
+                </section>
 
+            </div>  
         </div>
+        <script src="conditionals.js"></script>
     </body>
 </html>
