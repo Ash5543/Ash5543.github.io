@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sub Stop</h1>
+            <nav id="main-nav">
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </nav>
+            <nav id="login-nav" class="columns-mobile">
+                <section>
+                    <img src="images/user.png" height="50px" width="50px">
+                </section>
+                <section>
+                    <h3>Login</h3>
+                </section>
+            </nav>
+            <img id="logo" src="images/logo.jpg">
+        </header>
+        <main id="menu">
+            <h1>Hot subs</h1>
+            <div class="columns-mobile menu">
+                <section id="philly-clickable" class="menu-option">
+                    <img src="images/menu-img/philly.jpg">
+                    <h3>Philly Cheesesteak</h3>
+                </section>
+                <section class="menu-option">
+                    <img src="images/menu-img/meatball.jpg">
+                    <h3>Meatball Sub</h3>
+                </section>
+                <section class="menu-option">
+                    <img src="images/menu-img/buffalo.jpg">
+                    <h3>Buffalo Chicken</h3>
+                </section>
+                <section class="menu-option">
+                    <img src="images/menu-img/cuban.jpg">
+                    <h3>Cuban Sandwich</h3>
+                </section>
+            </div>
+            <h1>Cold subs</h1>
+            <div class="columns-mobile menu">
+                <section class="menu-option">
+                    <img src="images/menu-img/italian.jpg">
+                    <h3>Italian</h3>
+                </section>
+                <section class="menu-option">
+                    <img src="images/menu-img/turkey.jpg">
+                    <h3>Turkey</h3>
+                </section>
+                <section class="menu-option">
+                    <img src="images/menu-img/ham.jpg">
+                    <h3>Ham</h3>
+                </section>
+                <section class="menu-option">
+                    <img src="images/menu-img/chickensalad.jfif">
+                    <h3>Chicken Salad</h3>
+                </section>
+            </div>
+            <div id="order-details" class="hidden">
+                <h2>Philly Cheesesteak</h2>
+                <h4>Toppings</h4>
+                <input type="radio" id="one">
+                <label for="one">Steak</label>
+                <input type="radio" id="two">
+                <label for="two">Cheese</label>
+                <input type="radio" id="three">
+                <label for="three">Bell Peppers</label>
+            </div>
+            <script src="popups.js"></script>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sub Stop</h1>
+            <nav id="main-nav">
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </nav>
+            <nav id="login-nav" class="columns-mobile">
+                <section>
+                    <img src="images/user.png" height="50px" width="50px">
+                </section>
+                <section>
+                    <h3>Login</h3>
+                </section>
+            </nav>
+            <img id="logo" src="images/logo.jpg">
+        </header>
+        <main id="order-main">
+            <div id="order">
+                <section class="sandwich columns">
+                    <img src="images/menu-img/italian.jpg">
+                    <div class="sandwich-p">
+                        <h2>Italian Sub</h2>
+                        <p>Salami, Pepperoni, Ham, Lettuce</p>
+                        <button id="edit-btn">Edit</button>
+                    </div>
+                    <div class="number">
+                        <input type="number">
+                    </div>
+                </section>
+                <section class="sandwich columns">
+                    <img src="images/menu-img/philly.jpg">
+                    <div class="sandwich-p">
+                        <h2>Philly Cheesesteak</h2>
+                        <p>Steak, Cheese, Bell Peppers</p>
+                        <button>Edit</button>
+                    </div>
+                    <div class="number">
+                        <input type="number">
+                    </div>
+                </section>
+            </div>
+            <div id="order-details-two" class="hidden">
+                <h2>Italian</h2>
+                <h4>Toppings</h4>
+                <input type="radio" id="one">
+                <label for="one">Salami</label>
+                <input type="radio" id="two">
+                <label for="two">Pepperoni</label>
+                <input type="radio" id="three">
+                <label for="three">Lettuce</label>
+            </div>
+            <script src="order-popup.js"></script>
+        </main>
+    </body>
+</html>

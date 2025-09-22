@@ -1,6 +1,12 @@
 /*Colors*/
+:root{
+    --green:#7BA098;
+    --black:#000000;
+    --blue:#03254E;
+    --lightblue:#545677;
+}
 header{
-    background:#7BA098;
+    background:var(--green);
 }
 #options section{
     background:beige;
@@ -20,12 +26,16 @@ h1{
 }
 
 /*Nav*/
+header{
+    position:relative;
+}
 nav li{
     list-style-type: none;
     padding-bottom:20px;
 }
 nav a{
     text-decoration: none;
+    color:var(--black);
 }
 header h1{
     padding-top:10px;
