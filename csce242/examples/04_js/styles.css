@@ -261,6 +261,11 @@ footer p {
 input{
     max-width: 100%;
 }
+
+
+.transparent{
+    visibility:hidden;
+}
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
     .columns {
