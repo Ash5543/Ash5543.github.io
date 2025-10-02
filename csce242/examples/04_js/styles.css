@@ -261,7 +261,19 @@ footer p {
 input{
     max-width: 100%;
 }
-
+.shoe{
+    text-align: center;
+    flex:1;
+    margin:10px;
+    background:cornflowerblue;
+    padding:5px;
+}
+.shoe ul{
+    padding-right:15%;
+}
+.shoe li{
+    list-style-type: none;
+}
 
 .transparent{
     visibility:hidden;

@@ -1,0 +1,11 @@
+[
+    {
+        "_id":1,
+        "name":"Philly Cheesesteak",
+        "bread":"white",
+        "toppings":["cheese","beef","peppers"],
+        "hot": "true",
+        "price": "$7",
+        "img": "philly.jpg"
+    }
+]

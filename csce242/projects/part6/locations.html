@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sub Stop</h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <h2 id="arrow-up" class="hidden">&#129033;</h2>
+                    <h2 id="arrow-down" class="">&#129035;</h2>
+                </div>
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </nav>
+            <img id="logo" src="images/logo.jpg">
+        </header>
+        <main>
+            <div id="location" class="columns">
+                <section id ="map">
+                    <img src="images/map.jpg">
+                    <h1 id="marker">&#9829;</h1>
+                </section>
+                <section id="location-info">
+                    <h1>Find a Location</h1>
+                    <p>Enter your zip:</p>
+                    <div id="data">
+                        <input type="text"><br><br>
+                        <button>Find a Stop</button>
+                    </div>
+                    <p id="location-data">
+                        <h2 id="data-h2"></h2>
+                        <p id="data-p"></p>
+                        <button id="call-btn" class="hidden">Call</button>
+                    </p>
+                </section>
+            </div>
+        </main>
+        <script src="map.js"></script>
+        <script src="js/nav.js"></script>
+    </body>
+</html>
