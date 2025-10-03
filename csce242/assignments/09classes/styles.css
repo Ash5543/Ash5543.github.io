@@ -1,0 +1,46 @@
+body{
+    background:#C3BAAA;
+}
+
+
+#paintings{
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    color:#334E58;
+}
+h1{
+    text-align: center;
+    color:#334E58;
+}
+
+.painting img{
+    height:250px;
+    width:250px;
+}
+
+img{
+    height:400px;
+    width:400px;
+    display:block;
+    margin:auto;
+}
+
+.frame{
+    border:20px solid gold;
+}
+
+.painting{
+    margin:15px;
+}
+@media only screen and (min-width: 1200px){
+    .columns{
+        display:flex;
+    }
+
+    #paintings{
+        margin-top:30px;
+    }
+}
