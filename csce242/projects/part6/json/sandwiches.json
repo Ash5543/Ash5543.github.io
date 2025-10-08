@@ -24,7 +24,7 @@
         "toppings":["cheese","chicken","buffalo sauce"],
         "hot": "true",
         "price": "$7",
-        "img": "philly.jpg"
+        "img": "buffalo.jpg"
     },
     {
         "id": 4,
