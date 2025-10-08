@@ -31,6 +31,50 @@ const showSandwiches=async()=>{
         }
         section.onclick=()=>{
             //popup shite
+            const popup = document.createElement("div");
+            popup.classList.add("popup-background");
+            const popupcontent = document.createElement("div");
+            popupcontent.classList.add("popup");
+
+            const name = document.createElement("h2");
+            name.innerHTML=sandwich.name;
+            popupcontent.append(name);
+
+            const label = document.createElement("h3");
+            label.innerHTML="Toppings:";
+            popupcontent.append(label);
+
+            //toppings
+            sandwich.toppings.forEach((topping, index)=>{
+                const choice = document.createElement("input");
+                choice.type = "checkbox";
+                choice.id = `${index}`; // unique id for each checkbox
+                choice.value = topping;
+
+                const label = document.createElement("label");
+                label.htmlFor = choice.id;
+                label.innerHTML = topping;
+                popupcontent.append(choice);
+                popupcontent.append(label);
+
+                const br = document.createElement("br");
+                popupcontent.append(br);
+            });
+
+            const span = document.createElement("span");
+            span.classList.add("x-button");
+            span.classList.add("topright");
+            span.innerHTML="&times;";
+            popupcontent.append(span);
+            span.onclick=()=>{
+                popup.style.display="none";
+            };
+
+
+            popup.append(popupcontent);
+            popup.style.display="block";
+
+            document.getElementById("menu").append(popup);
         };
     });
 }
