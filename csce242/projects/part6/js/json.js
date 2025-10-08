@@ -30,7 +30,6 @@ const showSandwiches=async()=>{
             coldmenu.append(section);
         }
         section.onclick=()=>{
-            //popup shite
             const popup = document.createElement("div");
             popup.classList.add("popup-background");
             const popupcontent = document.createElement("div");
@@ -48,7 +47,7 @@ const showSandwiches=async()=>{
             sandwich.toppings.forEach((topping, index)=>{
                 const choice = document.createElement("input");
                 choice.type = "checkbox";
-                choice.id = `${index}`; // unique id for each checkbox
+                choice.id = `${index}`;
                 choice.value = topping;
 
                 const label = document.createElement("label");
