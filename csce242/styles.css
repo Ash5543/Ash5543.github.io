@@ -10,6 +10,7 @@ body{
 }
 .assignment{
     background:rgb(180, 179, 179);
+    height:fit-content;
 }
 
 /* Text */
@@ -51,7 +52,7 @@ p{
     .assignment{
         flex:1 1 45%;
         margin:10px;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
     }
     .description{
         margin:0;
