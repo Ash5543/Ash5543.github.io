@@ -1,0 +1,74 @@
+[
+    {
+        "_id":1,
+        "name":"Philly Cheesesteak",
+        "bread":"white",
+        "toppings":["cheese","beef","peppers"],
+        "hot": "true",
+        "price": "$7",
+        "img": "philly.jpg"
+    },
+    {
+        "_id":2,
+        "name":"Meatball Sub",
+        "bread":"white",
+        "toppings":["cheese","meatballs","marinara sauce"],
+        "hot": "true",
+        "price": "$7",
+        "img": "meatball.jpg"
+    },
+    {
+        "_id":3,
+        "name":"Buffalo Chicken",
+        "bread":"white",
+        "toppings":["cheese","chicken","buffalo sauce"],
+        "hot": "true",
+        "price": "$7",
+        "img": "buffalo.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cuban Sandwich",
+        "bread": "white",
+        "toppings":["ham", "cheese"],
+        "hot": "true",
+        "price": "7$",
+        "img": "cuban.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Italian",
+        "bread": "white",
+        "toppings":["salami", "pepperoni", "cheese"],
+        "hot": "false",
+        "price": "$7",
+        "img": "italian.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Turkey",
+        "bread": "white",
+        "toppings":["turkey", "cheese", "mustard"],
+        "hot": "false",
+        "price": "$7",
+        "img": "turkey.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Ham",
+        "bread": "white",
+        "toppings":["ham", "cheese", "mayo"],
+        "hot": "false", 
+        "price": "$7",
+        "img": "ham.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Chicken Salad",
+        "bread": "white",
+        "toppings":["chicken salad", "mayo"],
+        "hot": "false",
+        "price": "$7",
+        "img": "chickensalad.jfif"
+    }
+]

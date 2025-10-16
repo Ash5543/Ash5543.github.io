@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sub Stop</h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <h2 id="arrow-up" class="hidden">&#129033;</h2>
+                    <h2 id="arrow-down" class="">&#129035;</h2>
+                </div>
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </nav>
+            <img id="logo" src="images/logo.jpg">
+        </header>
+        <main>
+            <div id="location" class="columns">
+                <section id="map-sec">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26463.692897137204!2d-81.02543361343784!3d33.993519766861624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSubway!5e0!3m2!1sen!2sus!4v1760645694862!5m2!1sen!2sus"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section id="location-info">
+                    <h1>Find a Location</h1>
+                    <p>Enter your zip:</p>
+                    <div id="data">
+                        <input type="text"><br><br>
+                        <button>Find a Stop</button>
+                    </div>
+                    
+                    <p>
+                        <h2 id="contact">Contact us:</h2>
+                        <form method="POST" id="contact-form">
+                            <input type="hidden" name="access_key" value="831af5c8-f506-4c03-81f4-01f9f110f667">
+                            <p>
+                                <label for="name">Name: </label>
+                                <input type="text" name="name" required>
+                            </p>
+                            <p>
+                                <label for="email">Email: </label>
+                                <input type="email" name="email" required>
+                            </p>
+                            <p>
+                                <label for="message">Message: </label>
+                            </p>
+                            <textarea id="textbox" name="message" required></textarea>
+                    
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <br>
+                            <button id="submit" type="submit">Submit Form</button>
+
+                            <div id="result"></div>
+
+                        </form>
+                    </p>
+                </section>
+            </div>
+        </main>
+        <script src="js/nav.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
